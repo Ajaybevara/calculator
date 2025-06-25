@@ -1,0 +1,128 @@
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: #fff;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .calculator {
+      background-color: #1e1e1e;
+      border-radius: 20px;
+      padding: 20px;
+      width: 350px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    }
+
+    .display {
+      background: #000;
+      color: #0f0;
+      font-size: 32px;
+      padding: 15px;
+      border: none;
+      width: 100%;
+      border-radius: 10px;
+      text-align: right;
+      margin-bottom: 10px;
+    }
+
+    .buttons {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 10px;
+    }
+
+    button {
+      padding: 20px;
+      font-size: 20px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      background-color: #333;
+      color: white;
+      transition: background 0.3s;
+    }
+
+    button.operator {
+      background-color: orange;
+    }
+
+    button.clear {
+      background-color: red;
+    }
+
+    button.advanced {
+      background-color: #555;
+    }
+
+    button:hover {
+      opacity: 0.9;
+    }
+
+    .history {
+      margin-top: 15px;
+      font-size: 14px;
+      color: #ccc;
+      max-height: 100px;
+      overflow-y: auto;
+      background: #222;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .theme-toggle {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+
+    .theme-toggle button {
+      background-color: #444;
+      font-size: 14px;
+      padding: 8px 12px;
+      border-radius: 10px;
+    }
+
+    body.light {
+      background-color: #f0f0f0;
+      color: #000;
+    }
+
+    body.light .calculator {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    }
+
+    body.light .display {
+      background: #f9f9f9;
+      color: #000;
+    }
+
+    body.light button {
+      background-color: #ddd;
+      color: #000;
+    }
+
+    body.light button.operator {
+      background-color: #f90;
+    }
+
+    body.light button.clear {
+      background-color: #f44;
+    }
+
+    body.light button.advanced {
+      background-color: #bbb;
+    }
+
+    body.light .history {
+      background-color: #eee;
+      color: #222;
+    }
+
+    body.light .theme-toggle button {
+      background-color: #ccc;
+    }

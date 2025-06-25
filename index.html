@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">Toggle Light/Dark</button>
+  </div>
+  <input type="text" class="display" id="display" disabled>
+  <div class="buttons">
+    <button class="clear" onclick="clearDisplay()">C</button>
+    <button onclick="deleteLast()">⌫</button>
+    <button class="advanced" onclick="appendFunction('%')">%</button>
+    <button class="operator" onclick="appendOperator('/')">÷</button>
+
+    <button onclick="appendNumber('7')">7</button>
+    <button onclick="appendNumber('8')">8</button>
+    <button onclick="appendNumber('9')">9</button>
+    <button class="operator" onclick="appendOperator('*')">×</button>
+
+    <button onclick="appendNumber('4')">4</button>
+    <button onclick="appendNumber('5')">5</button>
+    <button onclick="appendNumber('6')">6</button>
+    <button class="operator" onclick="appendOperator('-')">−</button>
+
+    <button onclick="appendNumber('1')">1</button>
+    <button onclick="appendNumber('2')">2</button>
+    <button onclick="appendNumber('3')">3</button>
+    <button class="operator" onclick="appendOperator('+')">+</button>
+
+    <button onclick="appendNumber('0')">0</button>
+    <button onclick="appendDecimal()">.</button>
+    <button class="advanced" onclick="appendFunction('sqrt')">√</button>
+    <button class="advanced" onclick="appendFunction('pow')">xʸ</button>
+
+    <button class="advanced" onclick="appendFunction('square')">x²</button>
+    <button class="operator" style="grid-column: span 3;" onclick="calculate()">=</button>
+  </div>
+
+  <div class="history" id="history">
+    <strong>History:</strong><br>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
